@@ -19,17 +19,17 @@ claude install-skill /path/to/CodeBaseSummary/summarize-codebase
 Or if shared via a git repo:
 
 ```bash
-claude install-skill https://github.com/your-org/CodeBaseSummary/summarize-codebase
+claude install-skill https://github.com/Yanksi/CodeBaseSummary/summarize-codebase
 ```
 
 ## Usage
 
-In any project, just say:
+In any project, run:
 
-- `/summarize-codebase`
-- "summarize this codebase"
-- "create a codebase index"
-- "generate CLAUDE.md"
-- "map this project"
+```
+/summarize-codebase
+```
+
+This is the recommended way to invoke the skill. While natural language prompts like "summarize this codebase" or "generate CLAUDE.md" can also trigger it, Claude has a known tendency to handle these requests natively instead of consulting the skill. Using the slash command guarantees the skill is used.
 
 If a `CLAUDE.md` already exists, the skill merges new findings into it without overwriting your manually-written content.

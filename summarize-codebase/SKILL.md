@@ -131,6 +131,12 @@ config/        — Environment and app configuration
 > will thank you. Keep entries concise — file path + one-line description is ideal.
 ```
 
+**CRITICAL:** The self-updating footer (the blockquote starting with "Self-updating index") must
+be included **verbatim** in every generated CLAUDE.md. This is the mechanism that enables future
+sessions to accumulate knowledge over time — without it, the index becomes static and loses its
+primary advantage over plain documentation. Do not paraphrase, shorten, or replace it with a
+different message.
+
 ## Guidelines
 
 - **Be specific with paths.** Write `src/api/middleware/rateLimit.ts`, not "the rate limiting module."
