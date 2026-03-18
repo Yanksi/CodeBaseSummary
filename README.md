@@ -12,15 +12,20 @@ The generated index also includes a self-updating instruction: if Claude discove
 
 ## Install
 
-```bash
-claude install-skill /path/to/CodeBaseSummary/summarize-codebase
-```
-
-Or if shared via a git repo:
+Clone the repo and copy the skill folder into your personal skills directory:
 
 ```bash
-claude install-skill https://github.com/Yanksi/CodeBaseSummary/summarize-codebase
+git clone https://github.com/Yanksi/CodeBaseSummary.git
+cp -r CodeBaseSummary/summarize-codebase ~/.claude/skills/summarize-codebase
 ```
+
+Or for a project-specific install (only available in that project):
+
+```bash
+cp -r /path/to/CodeBaseSummary/summarize-codebase .claude/skills/summarize-codebase
+```
+
+Claude Code automatically discovers skills in these directories — no additional setup needed.
 
 ## Usage
 
